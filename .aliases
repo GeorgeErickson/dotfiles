@@ -15,6 +15,9 @@ alias s="subl ."
 alias o="open"
 alias oo="open ."
 
+# pep8 defaults - I like reallly long lines
+alias pep="pep8 --max-line-length=200"
+
 # List all files colorized in long format
 alias l="ls -Gl"
 
