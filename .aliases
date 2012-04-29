@@ -17,7 +17,7 @@ alias oo="open ."
 
 # Python stuff
 alias pep="pep8 --max-line-length=200"
-alias p= "pyflakes .; pep ."
+alias p="pyflakes .; pep ."
 
 # List all files colorized in long format
 alias l="ls -Gl"
