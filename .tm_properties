@@ -3,3 +3,6 @@ tabSize = 2
 
 [*.py]
 tabSize = 4
+
+[makefile]
+softTabs = False
