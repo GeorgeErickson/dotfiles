@@ -1,10 +1,12 @@
-#George’s dotfiles
+#George’s Computer Setup
 
 ## Initial Setup
 1. Install Xcode
 2. Install [homebrew](http://mxcl.github.com/homebrew/)
 3. Install git ```brew install git```
-4. Install [solarized](http://ethanschoonover.com/solarized) theme
+4. Install virtualenvwrapper ```sudo easy_install virtualenvwrapper``` 
+5. Install [solarized](http://ethanschoonover.com/solarized) theme
+6. Follow the Bootstrap Script Instructions Below
 
 
 ## Bootstrap Script
