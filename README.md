@@ -44,6 +44,14 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 1. [Mou](http://mouapp.com/) - a markdown editor
 2. [Textmate2](http://blog.macromates.com/2011/textmate-2-0-alpha/) - code editor
 3. [github:mac](http://mac.github.com/) - git gui
+4. [Google Drive](https://tools.google.com/dlpage/drive)
+5. [Dropbox](https://www.dropbox.com/)
+6. [Postgres.app](http://postgresapp.com/) - easiest way to install postgres
+
+### Favortie app store programs
+1. [Found](https://www.foundapp.com/) - lightning fast search of google drive, etc.
+2. [DaisyDisk](www.daisydiskapp.com/) - disk usuage, awesome for ssds
+3. [Fantastical](http://flexibits.com/fantastical) - nice calendar app
 
 
 ## Thanks to…
