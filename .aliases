@@ -4,11 +4,10 @@ alias ...="cd ../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-# Shortcuts
-alias d="cd ~/Dropbox"
-alias k="cd ~/kyruus"
-alias g="cd ~/github"
+#Programs
+alias mongo_run="mongod run --config /usr/local/etc/mongod.conf"
 
+#shortcuts
 alias v="vim"
 alias m="mate ."
 alias s="subl ."
