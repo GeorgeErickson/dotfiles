@@ -15,4 +15,4 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 #Postgres
 export PGDATA="/usr/local/var/postgres"
 
-export PYTHONPATH=/src/lib
+export PYTHONPATH=$PYTHONPATH:/src/lib
