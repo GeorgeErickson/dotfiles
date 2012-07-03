@@ -1,5 +1,7 @@
 # PATH additions
 # export PATH=":$PATH"
+#svn root
+export SVNROOT='https://kyruus.jira.com/svn/KYRUUS/'
 
 # Git credentials
 # Not in the repository, to prevent people from accidentally committing under my name
