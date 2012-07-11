@@ -10,13 +10,15 @@ alias mongo_run="mongod run --config /usr/local/etc/mongod.conf"
 #shortcuts
 alias v="vim"
 alias m="mate ."
-alias s="subl ."
 alias o="open"
 alias oo="open ."
 
 # Python stuff
 alias pep="pep8 --max-line-length=200"
-alias p="pyflakes .; pep ."
+alias p="pyflakes .; py.test"
+
+#svn stuff
+alias s="p ; svn commit "
 
 # List all files colorized in long format
 alias l="ls -Gl"
