@@ -1,5 +1,5 @@
 # PATH additions
-# export PATH=":$PATH"
+export PATH="/src/lib/kyruus/api/:$PATH"
 #svn root
 export trunk='https://kyruus.jira.com/svn/KYRUUS/trunk'
 export branches='https://kyruus.jira.com/svn/KYRUUS/branches'
