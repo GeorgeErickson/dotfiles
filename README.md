@@ -53,6 +53,9 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 2. [DaisyDisk](www.daisydiskapp.com/) - disk usuage, awesome for ssds
 3. [Fantastical](http://flexibits.com/fantastical) - nice calendar app
 
+## Setup IE virtual envs
+1. Use [ievms](https://github.com/xdissent/ievms/)
+2. Set the Network adapter to "Bridged Adapter" to enable localhost 
 
 ## Thanks to…
 
