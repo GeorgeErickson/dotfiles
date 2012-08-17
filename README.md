@@ -5,7 +5,7 @@
 2. Install [homebrew](http://mxcl.github.com/homebrew/)
 3. Install git ```brew install git```
 4. Install virtualenvwrapper ```sudo easy_install virtualenvwrapper``` 
-5. Install [solarized](http://ethanschoonover.com/solarized) theme
+5. Install [solarized](http://ethanschoonover.com/solarized) theme ```~/Library/Application\ Support/TextMate/Managed/Bundles/Themes.tmbundle/Themes/```
 6. Follow the Bootstrap Script Instructions Below
 
 
