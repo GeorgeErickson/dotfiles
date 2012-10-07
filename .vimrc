@@ -1,13 +1,5 @@
 " Make vim more useful
 set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-filetype plugin indent on
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-rails.git'
-
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
@@ -92,3 +84,10 @@ if has("autocmd")
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
+
+
+" Setup solarized theme
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
+
