@@ -6,7 +6,8 @@
 3. Install git ```brew install git```
 4. Install virtualenvwrapper ```sudo easy_install virtualenvwrapper``` 
 5. Install [solarized](http://ethanschoonover.com/solarized) theme ```~/Library/Application\ Support/TextMate/Managed/Bundles/Themes.tmbundle/Themes/```
-6. Follow the Bootstrap Script Instructions Below
+6. Install this pretty font [Source Code Pro](https://github.com/adobe/Source-Code-Pro/downloads)
+7. Follow the Bootstrap Script Instructions Below
 
 
 ## Bootstrap Script
