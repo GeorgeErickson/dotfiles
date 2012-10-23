@@ -15,5 +15,4 @@ else
 fi
 unset doIt
 bundle install
-source ~/.brew
 source ~/.bash_profile
