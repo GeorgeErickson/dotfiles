@@ -2,7 +2,7 @@
 
 ## Initial Setup
 1. Install Xcode
-2. Install [homebrew](http://mxcl.github.com/homebrew/)
+2. Install [homebrew](http://mxcl.github.com/homebrew/) - ```ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"```
 3. Install git ```brew install git```
 4. Install virtualenvwrapper ```sudo easy_install virtualenvwrapper``` 
 5. Install [solarized](http://ethanschoonover.com/solarized) theme ```~/Library/Application\ Support/TextMate/Managed/Bundles/Themes.tmbundle/Themes/```
