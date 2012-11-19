@@ -8,13 +8,7 @@ brew upgrade
 brew install wget --enable-iri
 brew install git
 brew install redis
-brew install geos
 brew install node
 brew install postgres
 brew install mongo
 
-#Make mongodb and postgres logs show up in Console App¬
-mkdir -p ~/Library/Logs/mongodb¬
-ln -s /usr/local/var/log/mongodb/output.log ~/Library/Logs/mongodb/output.log¬
-mkdir -p ~/Library/Logs/postgres¬
-ln -s /usr/local/var/postgres/server.log ~/Library/Logs/postgres/postgres/server.log

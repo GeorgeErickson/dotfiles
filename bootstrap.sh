@@ -14,5 +14,5 @@ else
 	fi
 fi
 unset doIt
-bundle install
+
 source ~/.bash_profile

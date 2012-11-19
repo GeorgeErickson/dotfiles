@@ -1,5 +1,7 @@
 # PATH additions
-export PATH="/src/lib/kyruus/api/:$PATH"
+export PATH="/src/lib/kyruus/api:/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH"
+
+
 #svn root
 export trunk='https://kyruus.jira.com/svn/KYRUUS/trunk'
 export branches='https://kyruus.jira.com/svn/KYRUUS/branches'

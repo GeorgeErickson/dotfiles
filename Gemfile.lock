@@ -1,18 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    jruby-pageant (1.1.1)
     json (1.7.5)
     localtunnel (0.3)
       json (>= 1.2.4)
       net-ssh (>= 2.0.22)
       net-ssh-gateway (>= 1.0.1)
     lunchy (0.6.0)
-    net-ssh (2.6.0)
-      jruby-pageant (>= 1.1.1)
+    net-ssh (2.6.1)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
-    rvm (1.11.3.5)
 
 PLATFORMS
   ruby
@@ -20,4 +17,3 @@ PLATFORMS
 DEPENDENCIES
   localtunnel
   lunchy
-  rvm

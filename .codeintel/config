@@ -1,0 +1,13 @@
+{
+
+    "Ruby": {
+        "ruby": "/usr/bin/ruby",
+        "rubyExtraPaths": []
+    },
+    "Python": {
+        "python": '/usr/bin/python',
+        "pythonExtraPaths": [
+            "~/.virtualenvs/passport2.6/lib/python2.6/site-packages"
+        ]
+    },
+}

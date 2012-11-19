@@ -60,4 +60,4 @@ parse_svn_repository_root() {
   svn info 2>/dev/null | sed -ne 's#^Repository Root: ##p'
 }
 
-PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\$(parse_svn_branch)\[$WHITE\]\n\$ \[$RESET\]"
+PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$PURPLE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on\")\[$PURPLE\]\$(parse_git_branch)\$(parse_svn_branch)\[$WHITE\]\n\$ \[$RESET\]"
