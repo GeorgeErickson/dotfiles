@@ -1,3 +1,4 @@
+call pathogen#infect()
 " Make vim more useful
 set nocompatible
 " Enhance command-line completion
@@ -85,9 +86,10 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
 
+" No word wrap
+set nowrap
 
 " Setup solarized theme
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
-

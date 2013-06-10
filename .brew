@@ -7,8 +7,6 @@ brew upgrade
 # Install wget with IRI support
 brew install wget --enable-iri
 brew install git
-brew install redis
-brew install node
 brew install postgres
-brew install mongo
+brew install git-extras
 

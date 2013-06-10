@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#
+#Shitty script to create a ssh config entry for icloud
+
+
+HOSTNAME=$(echo show Setup:/Network/BackToMyMac | scutil | egrep "[0-9]{1,}.members.btmm.icloud.com" -o)
+COMPUTER_NAME=$(scutil --get ComputerName)
+RED=$(tput setaf 9)
+RESET=$(tput sgr0)
+
+echo "${RED}Add the following to your .ssh/config (you probably also have to mess with your sharing preferences):
+$RESET
+Host $COMPUTER_NAME
+User $USER
+HostName $COMPUTER_NAME.$HOSTNAME
+AddressFamily inet6
+Protocol 2"

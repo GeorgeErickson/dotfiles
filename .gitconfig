@@ -1,6 +1,7 @@
 [alias]
 	# View the SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph
+	l = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)[%an]%Creset' --decorate
+	ll = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)[%an]%Creset' --decorate --numstat
 	# View the current working tree status using the short format
 	s = status -s
 	# Diff
@@ -12,22 +13,16 @@
 	# Commit all changes
 	ca = !git add . && git add -u && git commit -a
 	# Switch to a branch, creating it if necessary
-	go = checkout -B
+	go = checkout
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
   # update from svn ignore
   ignore = !git svn show-ignore >> .git/info/exclude
 
-[apply]
-	# Detect whitespace errors when applying a patch
-	whitespace = fix
-
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/gerickson/.gitignore
 	attributesfile = ~/.gitattributes
-	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
-	whitespace = space-before-tab,indent-with-non-tab,trailing-space
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -48,7 +43,6 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
-
 # Use `origin` as the default remote on the `master` branch in all cases
 [branch "master"]
 	remote = origin
@@ -67,3 +61,14 @@
 	pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
+[user]
+	name = GeorgeErickson
+	email = george55@mit.edu
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[log]
+	decorate = full

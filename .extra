@@ -1,5 +1,5 @@
 # PATH additions
-export PATH="/usr/local/share/npm/bin:/src/lib/kyruus/api:/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/bin:$HOME/bin:/usr/local/share/npm/bin:/src/lib/kyruus/api:/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH"
 
 
 #svn root
@@ -21,4 +21,3 @@ export PGDATA="/usr/local/var/postgres"
 export PYTHONPATH=$PYTHONPATH:/src/lib
 
 #Ruby
-source ~/.rvm/scripts/rvm
