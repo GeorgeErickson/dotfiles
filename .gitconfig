@@ -72,3 +72,5 @@
 	trustExitCode = true
 [log]
 	decorate = full
+[push]
+	default = matching
