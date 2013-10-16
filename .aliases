@@ -11,6 +11,7 @@ alias o="open"
 alias oo="open ."
 alias g='git'
 alias s='subl .'
+alias z='zeus'
 
 # Python stuff
 alias pep="pep8 --max-line-length=200"

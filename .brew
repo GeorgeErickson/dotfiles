@@ -9,4 +9,5 @@ brew install wget --enable-iri
 brew install git
 brew install postgres
 brew install git-extras
+brew install hub
 

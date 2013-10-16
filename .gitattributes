@@ -2,3 +2,4 @@
 * text=false
 
 *.svg binary
+*.rb diff=ruby

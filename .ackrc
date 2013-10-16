@@ -1,3 +1,10 @@
+# Ignore
+--ignore-dir=node_modules/
+--ignore-dir=bower/
+
+# custom types
+--type-add=css=scss
+--type-add=ruby=.haml,.rselm,.feature,.ru,.lock,.rake
 --type-set=coffee=.coffee
 --type-set=hbs=.hbs
 --type-set=jade=.jade
