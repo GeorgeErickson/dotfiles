@@ -23,6 +23,9 @@ brew install node
 brew install phantomjs
 brew install qt
 brew install redis
+brew install the_silver_searcher
+brew install bash-completions
+brew install memcached
 
 brew install heroku-toolbelt
 brew install openssl

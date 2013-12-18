@@ -135,6 +135,8 @@ SUPPORTED_APPS = {
 
     'Curl': ['.netrc'],
 
+    'Other': ['.bash_history', '.tugboat'],
+
     'Droplr': [PREFERENCES + 'com.droplr.droplr-mac.plist'],
 
     'Emacs': ['.emacs',

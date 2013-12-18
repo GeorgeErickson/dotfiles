@@ -95,4 +95,19 @@ function fixtabs {
   findtabs-file $@ | xargs bash -ic 'fixtabs $@'
 }
 
+function keys {
+  cat ~/.ssh/id_rsa.pub | tee pbcopy
+}
 
+function title {
+    echo -ne "\033]0;"$*"\007"
+}
+
+function dotfiles {
+  cd $HOME/Dropbox/config/dotfiles
+  subl .
+}
+
+function src {
+  subl `bundle show "$1"`
+}

@@ -1,8 +1,0 @@
-softTabs = True
-tabSize = 2
-
-[ source.python ]
-tabSize = 4
-
-[ makefile ]
-softTabs = False

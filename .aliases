@@ -1,21 +1,15 @@
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 #shortcuts
 alias v="vim"
-alias m="mate ."
 alias o="open"
 alias oo="open ."
 alias g='git'
 alias s='subl .'
 alias z='zeus'
-
-# Python stuff
-alias pep="pep8 --max-line-length=200"
-alias p="pyflakes .; py.test"
 
 # List all files colorized in long format
 alias l="ls -Gl"
