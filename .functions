@@ -111,3 +111,7 @@ function dotfiles {
 function src {
   subl `bundle show "$1"`
 }
+
+function gi {
+  curl http://www.gitignore.io/api/$(IFS=, ; echo "$*")
+}

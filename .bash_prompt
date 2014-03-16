@@ -43,6 +43,10 @@ export WHITE
 export BOLD
 export RESET
 
+function __my_rvm_prompt {
+  rvm-prompt i v g
+}
+
 function __my_rvm_ruby_version {
   local gemset=$(echo $GEM_HOME | awk -F'@' '{print $2}')
   [ "$gemset" != "" ] && gemset="@$gemset"
@@ -70,4 +74,4 @@ parse_svn_repository_root() {
   svn info 2>/dev/null | sed -ne 's#^Repository Root: ##p'
 }
 
-PS1="(\$(__my_rvm_ruby_version)) \[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$PURPLE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on\")\[$PURPLE\]\$(parse_git_branch)\$(parse_svn_branch)\[$WHITE\]\n\$ \[$RESET\]"
+PS1="(\$(__my_rvm_prompt)) \[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$PURPLE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on\")\[$PURPLE\]\$(parse_git_branch)\$(parse_svn_branch)\[$WHITE\]\n\$ \[$RESET\]"

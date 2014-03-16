@@ -1,4 +1,4 @@
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+# type -t brew > /dev/null || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -32,7 +32,7 @@ brew install openssl
 heroku plugins:install git://github.com/heroku/heroku-pipeline.git
 
 
-# brew tap phinze/homebrew-cask
-# brew install brew-cask
-# brew cask install anvil dropbox spotify github google-chrome
+brew tap phinze/homebrew-cask
+brew install brew-cask
+# brew cask install spotify github google-chrome iterm2
 

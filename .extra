@@ -12,3 +12,11 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 #Postgres
 export PGDATA="/usr/local/var/postgres"
+
+#http://merlinmoncure.blogspot.cz/2007/10/better-psql-with-less.html
+#export PAGER=less
+#export LESS="-iMSx4 -FX"
+QWANDRY_EDITOR=subl
+
+# Fix java
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
