@@ -4,11 +4,11 @@
 1. Install Xcode
 2. Install [homebrew](http://mxcl.github.com/homebrew/) - ```ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"```
 3. Install git ```brew install git```
-4. Install virtualenvwrapper ```sudo easy_install virtualenvwrapper``` 
+4. Install virtualenvwrapper ```sudo easy_install virtualenvwrapper```
 5. Install [solarized](http://ethanschoonover.com/solarized) theme ```~/Library/Application\ Support/TextMate/Managed/Bundles/Themes.tmbundle/Themes/```
 6. Install this pretty font [Source Code Pro](https://github.com/adobe/Source-Code-Pro/downloads)
 7. Follow the Bootstrap Script Instructions Below
-
+http://www.lowindata.com/2013/installing-scientific-python-on-mac-os-x/
 
 ## Bootstrap Script
 
@@ -56,7 +56,7 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 
 ## Setup IE virtual envs
 1. Use [ievms](https://github.com/xdissent/ievms/)
-2. Set the Network adapter to "Bridged Adapter" to enable localhost 
+2. Set the Network adapter to "Bridged Adapter" to enable localhost
 
 ## Thanks to…
 

@@ -113,5 +113,5 @@ function src {
 }
 
 function gi {
-  curl http://www.gitignore.io/api/$(IFS=, ; echo "$*")
+  curl -4 https://www.gitignore.io/api/$(IFS=, ; echo "$*")
 }

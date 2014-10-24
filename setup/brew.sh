@@ -12,16 +12,16 @@ fancy_echo() {
 
 # Install wget with IRI support
 brew install wget --enable-iri
-brew install git
-brew install postgres --no-python
-initdb /usr/local/var/postgres -E utf8
+# brew install git
+# brew install postgres --no-python
+# initdb /usr/local/var/postgres -E utf8
 brew install git-extras
-brew install hub
+# brew install hub
 brew install imagemagick
-brew install resty
-brew install node
-brew install phantomjs
-brew install qt
+# brew install resty
+# brew install node
+# brew install phantomjs
+# brew install qt
 brew install redis
 brew install the_silver_searcher
 brew install bash-completions

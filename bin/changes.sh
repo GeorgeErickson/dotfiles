@@ -20,6 +20,5 @@ FILES=".ackrc
 .wgetrc"
 for f in $FILES
 do
-  echo $f
-  diff $f ~/$f
+  git diff $f ~/$f
 done

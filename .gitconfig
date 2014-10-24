@@ -5,7 +5,7 @@
 	# View the current working tree status using the short format
 	s = status -s
 	# Diff
-	d = diff --patch-with-stat
+	d = diff --patch-with-stat --minimal
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
 	# Clone a repository including all submodules
@@ -19,6 +19,7 @@
   # update from svn ignore
   ignore = !git svn show-ignore >> .git/info/exclude
   dt = difftool -d -t difffork
+  g = grep --break --heading --line-number
 
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
@@ -73,3 +74,6 @@
 	decorate = full
 [push]
 	default = current
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f

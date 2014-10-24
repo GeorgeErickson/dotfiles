@@ -1,5 +1,5 @@
 # PATH additions
-export PATH="/usr/local/opt/ruby/bin:/usr/local/bin:$HOME/bin:/usr/local/share/npm/bin:/src/lib/kyruus/api:/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:/usr/local/opt/ruby/bin:/usr/local/bin:$HOME/bin:/usr/local/share/npm/bin:/src/lib/kyruus/api:/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH"
 
 # Git credentials
 # Not in the repository, to prevent people from accidentally committing under my name
@@ -18,5 +18,12 @@ export PGDATA="/usr/local/var/postgres"
 #export LESS="-iMSx4 -FX"
 QWANDRY_EDITOR=subl
 
-# Fix java
+# Fix java http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+
+# Google App engine
+export PATH=/Users/george/Dropbox/config/go_appengine:$PATH
+
+# Virtualenvwrapper
+export WORKON_HOME=/usr/local/virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
