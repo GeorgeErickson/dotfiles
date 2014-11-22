@@ -26,41 +26,7 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
-#source /usr/local/etc/bash_completion.d/heroku-completion.sh
-#source /usr/local/etc/bash_completion.d/lunchy-completion.sh
 
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
-
-# Add `killall` tab completion for common apps
-complete -o "nospace" -W "Finder Dock Mail Safari iTunes iCal Address\ Book SystemUIServer" killall
-
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-#eval "$(direnv hook bash)"
-#eval "$(rbenv init -)"
-
-
-# {{{
-# Node Completion - Auto-generated, do not touch.
-shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
-# }}}
-
-# The next line updates PATH for the Google Cloud SDK.
-source /Users/george/google-cloud-sdk/path.bash.inc
-
-# The next line enables bash completion for gcloud.
-source /Users/george/google-cloud-sdk/completion.bash.inc
-
-# OPAM configuration
-. /Users/george/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-
-# added by Anaconda 2.0.1 installer
-export PATH="//anaconda/bin:$PATH"
