@@ -34,10 +34,10 @@
 	local = yellow
 	remote = green
 [color "diff"]
-	meta = yellow bold
+	meta = yellow
 	frag = magenta bold
 	old = red bold
-	new = green bold
+	new = cyan
 [color "status"]
 	added = yellow
 	changed = green
@@ -75,5 +75,6 @@
 [push]
 	default = current
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
