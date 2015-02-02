@@ -6,33 +6,24 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
-fancy_echo() {
-  printf "\n%b\n" "$1"
-}
+brew tap homebrew/dupes
 
-# Install wget with IRI support
-brew install wget --enable-iri
-# brew install git
-# brew install postgres --no-python
-# initdb /usr/local/var/postgres -E utf8
+brew install moreutils
+brew install vim --override-system-vi
+brew install bash
+# - Add /usr/local/bin/bash to /etc/shells
+# - Run chsh -s /usr/local/bin/bash.
+brew install bash-completion
+brew install wget --with-iri
+brew install git
+brew install p7zip
+brew install postgres
 brew install git-extras
-# brew install hub
-brew install imagemagick
-# brew install resty
-# brew install node
-# brew install phantomjs
-# brew install qt
 brew install redis
-brew install the_silver_searcher
-brew install bash-completions
-brew install memcached
-
-brew install heroku-toolbelt
-brew install openssl
-heroku plugins:install git://github.com/heroku/heroku-pipeline.git
 
 
-brew tap phinze/homebrew-cask
-brew install brew-cask
-# brew cask install spotify github google-chrome iterm2
+brew install pigz
+brew install pv
+brew install tree
+
 
