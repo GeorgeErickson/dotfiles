@@ -1,7 +1,8 @@
-# Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
-# ~/.extra can be used for settings you don’t want to commit
-for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
-	[ -r "$file" ] && source "$file"
+export BREW_PREFIX=$(brew --prefix)
+
+
+for file in ~/.{extra,exports,aliases,functions}; do
+  [ -r "$file" ] && source "$file"
 done
 unset file
 
@@ -22,11 +23,20 @@ export LANG="en_US"
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
 # Add tab completiong for git
-source /usr/local/etc/bash_completion.d/git-completion.bash
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
+source "$BREW_PREFIX/etc/bash_completion"
 
-# Add tab completion for `defaults read|write NSGlobalDomain`
-# You could just use `-g` instead, but I like being explicit
-complete -W "NSGlobalDomain" defaults
+# Enable tab completion for `g` by marking it as an alias for `git`
+complete -o default -o nospace -F _git g;
+
+complete -C aws_completer aws
+eval "$(direnv hook bash)"
+
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# brew install --HEAD bash-git-prompt
+if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+  GIT_PROMPT_THEME=Solarized
+  GIT_PROMPT_FETCH_REMOTE_STATUS=0
+  source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+fi

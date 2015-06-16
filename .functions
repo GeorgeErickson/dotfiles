@@ -105,13 +105,18 @@ function title {
 
 function dotfiles {
   cd $HOME/Dropbox/config/dotfiles
-  subl .
-}
-
-function src {
-  subl `bundle show "$1"`
+  atom
 }
 
 function gi {
   curl -4 https://www.gitignore.io/api/$(IFS=, ; echo "$*")
+}
+
+function keychain {
+  security find-generic-password -gl $1 2>&1 >/dev/null | cut -d \" -f 2
+}
+
+# Find process using port
+function port-of {
+  lsof -n -i4TCP:$1
 }
