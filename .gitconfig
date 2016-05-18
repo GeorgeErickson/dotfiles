@@ -16,14 +16,11 @@
 	go = checkout
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
-  # update from svn ignore
-  ignore = !git svn show-ignore >> .git/info/exclude
-  dt = difftool -d -t difffork
   g = grep --break --heading --line-number
 
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = /Users/gerickson/.gitignore
+	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
 
 [color]
@@ -65,11 +62,9 @@
 	insteadOf = "gist:"
 [user]
 	name = GeorgeErickson
-	email = george55@mit.edu
+	email = me@gee.io
 [mergetool]
 	keepBackup = true
-[difftool "difffork"]
-	cmd = difffork \"$LOCAL\" \"$REMOTE\" -w
 [log]
 	decorate = full
 [push]
